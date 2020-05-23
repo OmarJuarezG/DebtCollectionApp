@@ -1,2 +1,2 @@
 # DebtCollectionApp
-Debt collection dashboard with Shiny App
+Debt collection dashboard with Shiny
