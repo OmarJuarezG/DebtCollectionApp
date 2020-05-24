@@ -1,0 +1,94 @@
+---
+title: "Debt Collection Dashboard"
+author: "Omar Juarez"
+date: "23/5/2020"
+output:
+  beamer_presentation: default
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Motivation
+
+
+- The department did not have an organized tool to keep track of the activities done by debt collectors.
+
+- If the manager wanted to know what was happening until a given week of a given month, the generation of that report was not well organized (not like a corporate report); and if it was, the information was centralized (just one computer).
+
+- If a collection executive wanted to take a look at the report he would have to ask to the person in charge of the report to send him a screenshot of the report.
+
+- The collection executive couldn't interact with the data inside the report if he wanted to check for somthing different.
+
+- The validation process was very difficult.
+
+
+## Adversities
+
+- Based on the limitations the department had and considering the budget restriction of the department it was difficult to ask for a business intelligence software for each member of the staff.
+
+#### How to cope with it?
+
+- We turn to 'R' and 'Shiny' which are free and allows the deployment of an app either on the web or in computers that share the same LAN connection.
+
+
+## Impact
+
+- This app was created in order to keep track of the activities and overall collections in the Collection Department. It tracks the activities of the debts collectors the bank has in the countryside every single day of the month.
+
+- It helps the department's manager to have a very good idea of what is happening and how the staff is responding. 
+
+- It allows the collection executive to download the data that he needs, in doing so we solve the problem of 'no interaction' they had before.
+
+- The information is not centralized.
+
+- Allows the validation of the information provided by the debt collector.
+
+## App structure
+- <font size = "4"> 2 tabs: 1 for general information and 1 for details. </font>
+
+#### General Tab
+
+- <font size = "4">  Shows all collections in a given month per day based on client status. As Line chart. </font>
+
+- <font size = "4"> KPI: Executive Collector Effective Index (CEI) as table. </font>
+
+- <font size = "4"> Top 20 collections. </font>
+
+#### Second tab(details)
+
+- <font size = "4"> Collector's total debt recovery as Bar chart. </font>
+
+- <font size = "4"> KPI: Collector Effective Index (CEI) as table. </font>
+
+- <font size = "4"> KPI: Activity measurement or portfolio breakdown. As bar chart. This is an aproximation to the 'Percentage of outbound calls in promise to pay (PTP)' KPI. </font>
+
+- <font size = "4"> Clients to attend based on activities specified by debt collectors. As table to be downloaded. </font>
+
+
+## App
+
+- The app can be found at: <https://omarjuarez.shinyapps.io/GeneralizedCollectApp/>
+- Code for cleaning the data and building the application: <https://github.com/SebastianOkada/DebtCollectionApp>
+
+
+## Future developments
+
+- Recreate second tab for attorneys.
+
+- KPI: Estimated payout.
+
+- KPI: Objective percentage.
+
+- KPI: Right party contact rate (RPC). To evaluate first.
+
+- KPI: Cost of collections.
+
+- KPI: Profit per account (PPA).
+
+
+
+
